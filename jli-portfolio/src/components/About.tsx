@@ -9,11 +9,11 @@ const About: React.FC = () => {
             <p>
                 I'm a software engineer with experience in cloud computing, game development, and full-stack web development.
                 I've collaborated on diverse projects, from building game mechanics to developing APIs and backend systems.
-                A UBC graduate, I’m always eager to learn and passionate about building solutions that make an impact.
+                As a UBC graduate, I’m always eager to learn and passionate about building solutions that make an impact.
             </p>
             <p>
-                I enjoy working with AWS, Scala, MongoDB, Python, and modern web frameworks. My strong teamwork skills and problem-solving ability drive my success in technical environments.
-                I'm also passionate about digital art, which inspires creative approaches in software design.
+                My strong teamwork skills and problem-solving ability drive my success in technical environments.
+                I'm also passionate about digital art, feel free to check it out below!
             </p>
         </section>
     );

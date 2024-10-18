@@ -1,6 +1,7 @@
 // src/components/Projects.tsx
 import React from 'react';
 import './Projects.css';
+import pirateRushTN from '../assets/pirate-rush-tn.jpg';
 
 interface Project {
     title: string;
@@ -27,17 +28,10 @@ const projects: Project[] = [
     },
     {
         title: "Pirate Rush",
-        link: "tbd",
+        link: "https://pirate-rush.onrender.com/",
         description: "A fast-paced pirate adventure.",
-        thumbnail: "/path/to/piraterush-thumbnail.jpg",
+        thumbnail: pirateRushTN,
         date: "2023"
-    },
-    {
-        title: "DejaDwell",
-        link: "tbd",
-        description: "A mystery game about reliving memories.",
-        thumbnail: "/path/to/dejadwell-thumbnail.jpg",
-        date: "2022"
     },
     {
         title: "Constellation Tango",
@@ -58,9 +52,10 @@ const Projects: React.FC = () => {
                         <img src={project.thumbnail} alt={`${project.title} thumbnail`} className="project-thumbnail"/>
                         <div className="project-details">
                             <div className="project-info">
-                                <a className={"title-link"} href={project.link} target="_blank"
+                                <a className={"project-link"} href={project.link} target="_blank"
                                    rel="noopener noreferrer">
-                                    <h3>{project.title}</h3></a>
+                                    <h3>{project.title}</h3>
+                                </a>
                             </div>
                             <p>{project.description}</p>
                             <p className="project-date">{project.date}</p>

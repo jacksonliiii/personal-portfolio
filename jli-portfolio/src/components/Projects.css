@@ -1,11 +1,12 @@
-/* src/components/Projects.css */
 .projects-section {
     padding: 2rem;
     background-color: #f5f5f5;
     border-radius: 5px;
+    scroll-margin-top: 100px;
 }
 
 .projects-section h2 {
+    margin-top: 10px;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -42,7 +43,6 @@
 
 /* Project details section */
 .project-details {
-    padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -52,11 +52,13 @@
     color: #333;
 }
 
+/* Style for project descriptions */
 .project-details p {
     margin: 0.5rem 0;
     color: #555;
 }
 
+/* Project date styling */
 .project-date {
     font-size: 0.875rem;
     color: #888;
@@ -66,9 +68,9 @@
 /* Remove underline from links and style hover */
 .project-info a {
     text-decoration: none;
-    color: white; /* Default link color */
     font-weight: 600;
     transition: color 0.3s;
+    color: #333; /* Default link color */
 }
 
 .project-info a:hover {

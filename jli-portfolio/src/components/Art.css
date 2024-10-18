@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
 }
 
 .art-piece {
@@ -52,4 +53,25 @@
 
 .instagram-link i {
     margin-left: 0.5rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .art-piece {
+        width: 45%; /* Make pieces wider on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .art-piece {
+        width: 90%; /* Make pieces full width on mobile */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Adjust title size on small screens */
+    }
+
+    .instagram-link {
+        font-size: 1rem; /* Adjust Instagram link size on small screens */
+    }
 }

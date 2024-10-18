@@ -7,7 +7,12 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 0 2rem; /* Add padding to the edges of the navbar */
+    padding: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Container to manage overall width */
@@ -16,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Limit the maximum width */
+    max-width: 1000px; /* Limit the maximum width */
     padding: 0 1.5rem; /* Add padding for a more centered look */
 }
 
