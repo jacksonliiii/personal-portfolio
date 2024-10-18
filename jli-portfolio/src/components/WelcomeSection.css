@@ -1,0 +1,49 @@
+/* src/components/WelcomeSection.css */
+
+.welcome-section {
+    background-color: black; /* Set background to black */
+    color: white; /* Set text color to white for contrast */
+    text-align: center; /* Center text */
+    padding: 50px 20px; /* Add padding */
+    position: relative; /* Position for absolute elements */
+}
+
+.welcome-title {
+    font-size: 2.5rem; /* Make the title bold and large */
+    font-weight: bold; /* Ensure the title is bold */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    display: inline-block; /* Keep it inline for proper spacing */
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; /* Add typing effect */
+}
+
+.art-space {
+    margin-top: 40px; /* Space between text and art */
+}
+
+.art-piece {
+    max-width: 90%; /* Responsive art piece size */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #f39c12; /* Orange border for emphasis */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 55%; /* End with full width */
+    }
+}
+
+/* Keyframes for blinking caret effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Hide the caret */
+    }
+    50% {
+        border-color: white; /* Show the caret */
+    }
+}

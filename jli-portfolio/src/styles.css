@@ -1,10 +1,11 @@
 /* src/styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Mulish', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .navbar {
     position: sticky;
@@ -48,3 +49,35 @@ section {
     height: 300px;
     margin-bottom: 2rem;
 }
+
+/* src/styles.css */
+.section {
+    padding: 5rem 2rem;
+    background-color: white;
+    color: #333;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--light-blue);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-title, .art-title {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.project-title:hover, .art-title:hover {
+    color: var(--light-blue); /* Light blue hover */
+}
+

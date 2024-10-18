@@ -1,0 +1,66 @@
+/* src/components/Art.css */
+
+.art-section {
+    text-align: center; /* Center text */
+    padding: 40px 20px; /* Add padding */
+}
+
+.section-title {
+    font-size: 2rem; /* Title size */
+    margin-bottom: 30px; /* Space below the title */
+    color: #f39c12; /* Use the orange color for the title */
+}
+
+.art-gallery {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the art pieces */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.art-piece {
+    position: relative; /* For absolute positioning of overlay */
+    overflow: hidden; /* Hide overflow for hover effects */
+    border-radius: 10px; /* Rounded corners */
+    width: 300px; /* Set fixed width */
+    height: 300px; /* Set fixed height */
+}
+
+.art-piece img {
+    width: 100%; /* Make image responsive */
+    height: 100%; /* Maintain height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.art-piece:hover img {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+.art-piece:hover::after {
+    content: 'View Artwork'; /* Overlay text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.minicomic {
+    margin-top: 40px; /* Space above */
+}
+
+.minicomic-image {
+    max-width: 90%; /* Responsive minicomic cover */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #f39c12; /* Orange border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.webcomic-placeholder {
+    margin-top: 40px; /* Space above */
+    font-size: 1.2rem; /* Font size */
+}

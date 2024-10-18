@@ -1,0 +1,68 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the container */
+    background-color: #111; /* Dark background */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 2rem; /* Add padding to the edges of the navbar */
+}
+
+/* Container to manage overall width */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    padding: 0 1.5rem; /* Add padding for a more centered look */
+}
+
+.navbar-left {
+    flex: 1.618; /* 61.8% width for the left side */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-left li {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    flex: 1; /* 38.2% width for the right side */
+}
+
+.navbar-right ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-right li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-right li a:hover {
+    color: #f39c12; /* Hover effect with orange color */
+}
+
+/* Smooth scroll for section links */
+html {
+    scroll-behavior: smooth;
+}
