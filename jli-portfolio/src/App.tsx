@@ -10,7 +10,7 @@ import './components/Main.css';
 
 const App: React.FC = () => {
     return (
-        <div>
+        <div className={"all-container"}>
             <Navbar />
             <div className="main-container">
                 <WelcomeSection />

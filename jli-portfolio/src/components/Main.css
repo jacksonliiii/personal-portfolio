@@ -20,10 +20,13 @@
     margin-top: 1rem;
 }
 
+.all-container {
+    background-color: #111;
+}
+
 .main-container {
     max-width: 55%; /* Maximum width of the container */
     margin: 0 auto; /* Center horizontally */
-    padding: 1.5rem; /* Add some padding */
 }
 
 /* Responsive Styles */

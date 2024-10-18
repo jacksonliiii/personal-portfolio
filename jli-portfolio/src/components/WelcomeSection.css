@@ -1,49 +1,54 @@
 /* src/components/WelcomeSection.css */
 
 .welcome-section {
-    background-color: black; /* Set background to black */
-    color: white; /* Set text color to white for contrast */
-    text-align: center; /* Center text */
-    padding: 50px 20px; /* Add padding */
-    position: relative; /* Position for absolute elements */
+    display: flex; /* Flex layout for side-by-side elements */
+    padding: 20px 20px; /* Add padding around the section */
+    background-color: #111; /* Dark background for sleek look */
+    color: white; /* White text for contrast */
+    min-height: 100vh; /* Full screen height */
+    text-align: left; /* Left-align the text */
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-content {
+    display: flex; /* Flex layout for side-by-side elements */
+    flex-direction: column;
+    justify-content: space-between; /* Space between content and art */
+    gap: 20px;
 }
 
 .welcome-title {
-    font-size: 2.5rem; /* Make the title bold and large */
-    font-weight: bold; /* Ensure the title is bold */
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    display: inline-block; /* Keep it inline for proper spacing */
-    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; /* Add typing effect */
+    font-size: 3rem; /* Bold and large font for title */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space below title */
+    color: #f39c12; /* Highlighted orange color */
 }
 
-.art-space {
-    margin-top: 40px; /* Space between text and art */
+.welcome-description {
+    font-size: 1.5rem; /* Large enough to stand out */
+    line-height: 1.6; /* Nice spacing between lines */
+    max-width: 600px; /* Control width for readability */
+    margin-bottom: 20px; /* Space below description */
 }
 
-.art-piece {
-    max-width: 90%; /* Responsive art piece size */
-    height: auto; /* Maintain aspect ratio */
-    border: 5px solid #f39c12; /* Orange border for emphasis */
-    border-radius: 10px; /* Rounded corners */
+.art-showcase {
+    flex: 1; /* The second part of the flexbox layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Keyframes for typing effect */
-@keyframes typing {
-    from {
-        width: 0; /* Start with no width */
-    }
-    to {
-        width: 55%; /* End with full width */
-    }
+.showcased-art {
+    max-width: 500px; /* Control the size of the showcased art */
+    width: 100%; /* Make it responsive */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Soft shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
-/* Keyframes for blinking caret effect */
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent; /* Hide the caret */
-    }
-    50% {
-        border-color: white; /* Show the caret */
-    }
+.showcased-art:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9); /* Increased shadow on hover */
 }

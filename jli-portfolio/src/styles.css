@@ -10,7 +10,7 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #333;
+    background-color: #111; /* Dark background for sleek look */
     color: white;
     padding: 1rem;
     display: flex;
@@ -33,17 +33,6 @@ section {
     text-align: center;
 }
 
-.welcome-section {
-    /*background: url('/path/to/image.jpg') no-repeat center center;*/
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
 .carousel {
     background-color: #f0f0f0;
     height: 300px;
@@ -59,7 +48,6 @@ section {
 
 .section-title {
     font-size: 2.5rem;
-    color: var(--light-blue);
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -72,12 +60,9 @@ section {
 
 .project-title, .art-title {
     font-size: 1.8rem;
-    color: #333;
+    color: #111;
     font-weight: 600;
     transition: color 0.3s;
 }
 
-.project-title:hover, .art-title:hover {
-    color: var(--light-blue); /* Light blue hover */
-}
 

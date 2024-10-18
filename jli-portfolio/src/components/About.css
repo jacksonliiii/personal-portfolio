@@ -1,0 +1,20 @@
+.about-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 5px;
+    margin: 0 auto;    /* Centers the block of text on the page */
+    text-align: left;  /* Ensures the text is left-aligned */
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f39c12;    /* Accent color */
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

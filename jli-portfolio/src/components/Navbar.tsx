@@ -1,6 +1,6 @@
 // src/components/Navbar.tsx
 import React from 'react';
-import './Navbar.css'; // Link to the navbar-specific styles
+import './Navbar.css';
 
 const Navbar: React.FC = () => {
     return (
@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
             <div className="navbar-container">
                 <div className="navbar-left">
                     <ul>
-                        <li><a href="#about">Jackson Li</a></li>
+                        <li><a href="#top">Jackson Li</a></li>
                     </ul>
                 </div>
                 <div className="navbar-right">
