@@ -1,4 +1,4 @@
-// src/App.tsx
+
 import React from 'react';
 import Navbar from './components/Navbar';
 import WelcomeSection from './components/WelcomeSection';

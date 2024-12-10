@@ -84,3 +84,17 @@
 .experience-description li {
     margin-bottom: 0.5rem; /* Space between list items */
 }
+
+.experience-logo {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height to match width */
+    object-fit: contain; /* Keep aspect ratio */
+    border-radius: 4px; /* Slightly rounded corners */
+    border: 1px solid #ddd; /* Subtle border for logo */
+}
+
+.logo-company {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

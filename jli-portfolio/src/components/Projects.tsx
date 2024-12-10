@@ -2,6 +2,9 @@
 import React from 'react';
 import './Projects.css';
 import pirateRushTN from '../assets/pirate-rush-tn.jpg';
+import L3TN from '../assets/l3_logo.png';
+import raycast from '../assets/raycast.png';
+import ct from '../assets/constellation-tango.png';
 
 interface Project {
     title: string;
@@ -11,60 +14,53 @@ interface Project {
     date: string;
 }
 
-const projects: Project[] = [
-    {
-        title: "L3",
-        link: "tbd",
-        description: "Leaderboard system for League of Legends stats.",
-        thumbnail: "/path/to/l3-thumbnail.jpg",
-        date: "2024"
-    },
-    {
-        title: "RayCast",
-        link: "tbd",
-        description: "A light-bouncing puzzle game.",
-        thumbnail: "/path/to/raycast-thumbnail.jpg",
-        date: "2023"
-    },
-    {
-        title: "Pirate Rush",
-        link: "https://pirate-rush.onrender.com/",
-        description: "A fast-paced pirate adventure.",
-        thumbnail: pirateRushTN,
-        date: "2023"
-    },
-    {
-        title: "Constellation Tango",
-        link: "tbd",
-        description: "Space-themed tactical game.",
-        thumbnail: "/path/to/constellationtango-thumbnail.jpg",
-        date: "2022"
-    },
-];
+const projects: Project[] = [{
+    title: "L3: League of Legends Leaderboard",
+    link: "https://github.com/byuen88/L3",
+    description: "Cloud-based, serverless Leaderboard app for League of Legends stats.",
+    thumbnail: L3TN,
+    date: "2024"
+}, {
+    title: "RayCast",
+    link: "https://github.com/transgwender/Raycast",
+    description: "A light-bouncing puzzle game.",
+    thumbnail: raycast,
+    date: "2024"
+}, {
+    title: "Pirate Rush",
+    link: "https://pirate-rush.onrender.com/",
+    description: "A fast-paced pirate adventure! (NOTE: link will take a while to spin up)",
+    thumbnail: pirateRushTN,
+    date: "2023"
+}, {
+    title: "Constellation Tango",
+    link: "https://store.steampowered.com/app/1721360/Constellation_Tango/",
+    description: "Space-themed tactical game.",
+    thumbnail: ct,
+    date: "2022"
+},];
 
 const Projects: React.FC = () => {
-    return (
-        <section id="projects" className="projects-section">
+    return (<section id="projects" className="projects-section">
             <h2>Projects</h2>
             <div className="projects-grid">
-                {projects.map((project) => (
-                    <div key={project.title} className="project-card">
-                        <img src={project.thumbnail} alt={`${project.title} thumbnail`} className="project-thumbnail"/>
+                {projects.map((project) => (<div key={project.title} className="project-card">
+                        <a className={"project-link"} href={project.link} target="_blank"
+                           rel="noopener noreferrer">
+                            <img src={project.thumbnail} alt={`${project.title} thumbnail`}
+                                 className="project-thumbnail"/>
+                        </a>
                         <div className="project-details">
                             <div className="project-info">
-                                <a className={"project-link"} href={project.link} target="_blank"
-                                   rel="noopener noreferrer">
-                                    <h3>{project.title}</h3>
-                                </a>
+                                <h3>{project.title}</h3>
+
                             </div>
                             <p>{project.description}</p>
                             <p className="project-date">{project.date}</p>
                         </div>
-                    </div>
-                ))}
+                    </div>))}
             </div>
-        </section>
-    );
+        </section>);
 };
 
 export default Projects;

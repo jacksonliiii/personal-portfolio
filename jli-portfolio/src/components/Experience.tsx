@@ -1,7 +1,11 @@
 // Experience.tsx
 import React from 'react';
-import ExperienceItem from './ExperienceItem'; // Import the new component
+import ExperienceItem from './ExperienceItem';
 import './Experience.css';
+import ubc from '../assets/ubc-logo.png';
+import semtech from '../assets/semtech-logo.png';
+import mh from '../assets/macrohealth-logo.png';
+
 
 const Experience: React.FC = () => {
     return (
@@ -19,6 +23,7 @@ const Experience: React.FC = () => {
                         "Built data model to standardize claim info and created REST APIs for data processing.",
                         "Wrote data validation scripts using JavaScript and MongoDB, ensuring accuracy.",
                     ]}
+                    logo={mh}
                 />
 
                 <ExperienceItem
@@ -30,17 +35,19 @@ const Experience: React.FC = () => {
                         "Accelerated Jenkins CI/CD pipeline run time by 14% by optimizing scripts in Groovy.",
                         "Automated device model testing process using PowerShell scripting, eliminating manual steps.",
                     ]}
+                    logo={semtech}
                 />
 
                 <ExperienceItem
                     title="Undergraduate Teaching Assistant"
                     company="University of British Columbia"
-                    date="September 2024 - Present"
+                    date="September 2024 - December 2024"
                     technologies="CPSC 310 - Software Engineering"
                     description={[
                         "Provided technical guidance to students in debugging TypeScript projects.",
                         "Led bi-weekly scrum meetings, removing blockers, and promoting Agile best practices.",
                     ]}
+                    logo={ubc}
                 />
             </ul>
         </section>
