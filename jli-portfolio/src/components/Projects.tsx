@@ -15,7 +15,7 @@ interface Project {
 }
 
 const projects: Project[] = [{
-    title: "L3: League of Legends Leaderboard",
+    title: "L3",
     link: "https://github.com/byuen88/L3",
     description: "Cloud-based, serverless Leaderboard app for League of Legends stats.",
     thumbnail: L3TN,
@@ -23,19 +23,19 @@ const projects: Project[] = [{
 }, {
     title: "RayCast",
     link: "https://github.com/transgwender/Raycast",
-    description: "A light-bouncing puzzle game.",
+    description: "A vibrant puzzle game about reflecting and bending light made using C++ and OpenGL.",
     thumbnail: raycast,
     date: "2024"
 }, {
     title: "Pirate Rush",
     link: "https://pirate-rush.onrender.com/",
-    description: "A fast-paced pirate adventure! (NOTE: link will take a while to spin up)",
+    description: "A fast-paced pirate adventure! (NOTE: link will take a while to spin up).",
     thumbnail: pirateRushTN,
     date: "2023"
 }, {
     title: "Constellation Tango",
     link: "https://store.steampowered.com/app/1721360/Constellation_Tango/",
-    description: "Space-themed tactical game.",
+    description: "Space-themed tactical game released on Steam!",
     thumbnail: ct,
     date: "2022"
 },];

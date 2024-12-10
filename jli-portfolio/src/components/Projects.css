@@ -45,6 +45,9 @@
 .project-details {
     padding-left: 1rem;
     padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .project-details h3 {
