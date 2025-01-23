@@ -22,7 +22,7 @@ const projects: Project[] = [{
     date: "2024"
 }, {
     title: "RayCast",
-    link: "https://github.com/transgwender/Raycast",
+    link: "https://teamlightbox.itch.io/raycast",
     description: "A vibrant puzzle game about reflecting and bending light made using C++ and OpenGL.",
     thumbnail: raycast,
     date: "2024"
