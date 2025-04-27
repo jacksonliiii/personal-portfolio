@@ -24,9 +24,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             <div className="experience-header">
                 <div className="experience-main">
                     <div className="experience-title">
-                        <a href={link} className="title-link" target="_blank" rel="noopener noreferrer">
-                            {title}
-                        </a>
+                        <span className="experience-title-name">{title}</span>
                         <span className="experience-date">{date}</span>
                     </div>
                     <div className={"logo-company"}>

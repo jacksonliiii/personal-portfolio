@@ -1,9 +1,9 @@
 .art-section {
     text-align: center;
-    padding: 3rem;
+    padding: 1rem 2rem 2rem 2rem;
     background-color: #111;
-    margin: 3rem 0;
-    border-radius: 5px;
+    margin: 2rem;
+    border-radius: 2px;
 }
 
 .section-title {

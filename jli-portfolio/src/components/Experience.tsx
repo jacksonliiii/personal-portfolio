@@ -42,7 +42,7 @@ const Experience: React.FC = () => {
                     title="Undergraduate Teaching Assistant"
                     company="University of British Columbia"
                     date="September 2024 - December 2024"
-                    technologies="CPSC 310 - Software Engineering"
+                    technologies="TypeScript, JavaScript, CSS"
                     description={[
                         "Provided technical guidance to students in debugging TypeScript projects.",
                         "Led bi-weekly scrum meetings, removing blockers, and promoting Agile best practices.",

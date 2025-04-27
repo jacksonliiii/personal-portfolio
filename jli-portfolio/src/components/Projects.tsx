@@ -15,12 +15,6 @@ interface Project {
 }
 
 const projects: Project[] = [{
-    title: "L3",
-    link: "https://github.com/byuen88/L3",
-    description: "Cloud-based, serverless Leaderboard app for League of Legends stats.",
-    thumbnail: L3TN,
-    date: "2024"
-}, {
     title: "RayCast",
     link: "https://teamlightbox.itch.io/raycast",
     description: "A vibrant puzzle game about reflecting and bending light made using C++ and OpenGL.",
@@ -32,6 +26,12 @@ const projects: Project[] = [{
     description: "A fast-paced pirate adventure! (NOTE: link will take a while to spin up).",
     thumbnail: pirateRushTN,
     date: "2023"
+}, {
+    title: "L3",
+    link: "https://github.com/byuen88/L3",
+    description: "Cloud-based, serverless Leaderboard app for League of Legends stats.",
+    thumbnail: L3TN,
+    date: "2024"
 }, {
     title: "Constellation Tango",
     link: "https://store.steampowered.com/app/1721360/Constellation_Tango/",

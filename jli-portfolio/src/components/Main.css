@@ -1,12 +1,11 @@
-/* src/components/Main.css */
 .main {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #f0f8ff; /* Soft blue background */
-    color: #333; /* Dark text for contrast */
+    background-color: #f0f8ff;
+    color: #333;
 }
 
 .main h1 {
@@ -16,7 +15,7 @@
 
 .main p {
     font-size: 1.5rem;
-    color: #666; /* Slightly muted color for subtext */
+    color: #666;
     margin-top: 1rem;
 }
 
@@ -25,51 +24,50 @@
 }
 
 .main-container {
-    max-width: 55%; /* Maximum width of the container */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 55%;
+    margin: 0 auto;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
     .main h1 {
-        font-size: 3.5rem; /* Smaller font size on medium screens */
+        font-size: 3.5rem;
     }
 
     .main p {
-        font-size: 1.25rem; /* Smaller subtext */
+        font-size: 1.25rem;
     }
 
     .main-container {
-        max-width: 80%; /* Increase container width on medium screens */
+        max-width: 80%;
     }
 }
 
 @media (max-width: 768px) {
     .main h1 {
-        font-size: 3rem; /* Smaller font size on small screens */
+        font-size: 3rem;
     }
 
     .main p {
-        font-size: 1.1rem; /* Further decrease subtext size */
+        font-size: 1.1rem;
     }
 
     .main-container {
-        max-width: 90%; /* Increase container width on small screens */
-        padding: 1rem; /* Reduce padding */
+        max-width: 90%;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .main h1 {
-        font-size: 2.5rem; /* Even smaller font size on extra small screens */
+        font-size: 2.5rem;
     }
 
     .main p {
-        font-size: 1rem; /* Smallest subtext size */
+        font-size: 1rem;
     }
 
     .main-container {
-        max-width: 95%; /* Increase container width for very small screens */
-        padding: 0.5rem; /* Further reduce padding */
+        max-width: 95%;
+        padding: 0.5rem;
     }
 }

@@ -27,7 +27,7 @@ const Art: React.FC = () => {
             {/* Instagram link */}
             <div className="instagram-link">
                 <p>If you're feeling adventurous, come check out more of my art on my
-                    <a href="https://instagram.com/wasabiiwooman" target="_blank" rel="noopener noreferrer">
+                    <a href="https://instagram.com/pinekonei" target="_blank" rel="noopener noreferrer">
                         Instagram!
                     </a>
                 </p>
