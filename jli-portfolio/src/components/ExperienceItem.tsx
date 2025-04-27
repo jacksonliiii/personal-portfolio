@@ -16,7 +16,6 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                                                            date,
                                                            technologies,
                                                            description,
-                                                           link,
                                                            logo
                                                        }) => {
     return (
