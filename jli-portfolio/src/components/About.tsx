@@ -7,10 +7,8 @@ const About: React.FC = () => {
         <section id="about" className="about-section">
             <h2>About Me</h2>
             <p>
-                Hello! I'm a recent UBC CS graduate, nice to meet you!
-            </p>
-            <p>
-            I've got plenty of SWE experience, a passion for working on cool projects and an addiction to doodling. Thanks for checking out my page!
+                Hi, I’m Jackson, a recent computer science graduate.  Nice to meet you! When I’m not coding, you’ll find me gaming, reading manga, or drawing.
+                Thanks for checking out my page!
             </p>
         </section>
     );

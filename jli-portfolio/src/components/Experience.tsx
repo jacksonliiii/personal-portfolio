@@ -5,6 +5,7 @@ import './Experience.css';
 import ubc from '../assets/ubc-logo.png';
 import semtech from '../assets/semtech-logo.png';
 import mh from '../assets/macrohealth-logo.png';
+import gr from '../assets/gr-logo.png';
 
 
 const Experience: React.FC = () => {
@@ -13,7 +14,18 @@ const Experience: React.FC = () => {
             <h2>Work Experience</h2>
             <ul className="experience-list">
                 <ExperienceItem
-                    title="Software Engineer Intern"
+                    title="Software Developer Intern"
+                    company="Global Relay"
+                    date="September 2025 - Current"
+                    technologies="Java, Python, Ansible, Opensearch, Grafana"
+                    description={[
+                        "Improved Grafana dashboards using Python scripting, OpenSearch, and Ansible to aid API monitoring."
+                    ]}
+                    logo={gr}
+                />
+
+                <ExperienceItem
+                    title="Software Engineer Co-op"
                     company="MacroHealth"
                     date="September 2023 - August 2024"
                     technologies="Scala, MongoDB, JavaScript, Apache Nifi"
@@ -27,7 +39,7 @@ const Experience: React.FC = () => {
                 />
 
                 <ExperienceItem
-                    title="Software Engineer Intern"
+                    title="Software Engineer Co-op"
                     company="Semtech"
                     date="September 2022 - April 2023"
                     technologies="Python, Jenkins, Groovy, Docker"

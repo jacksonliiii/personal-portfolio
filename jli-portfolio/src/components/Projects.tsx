@@ -23,9 +23,9 @@ const projects: Project[] = [{
 }, {
     title: "Pirate Rush",
     link: "https://pirate-rush.onrender.com/",
-    description: "A fast-paced pirate adventure! (NOTE: link will take a while to spin up).",
+    description: "A fast-paced pirate adventure! Build your crew and click your way to the top!",
     thumbnail: pirateRushTN,
-    date: "2023"
+    date: "2024"
 }, {
     title: "L3",
     link: "https://github.com/byuen88/L3",
