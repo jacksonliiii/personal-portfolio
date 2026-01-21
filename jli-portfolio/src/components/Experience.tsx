@@ -19,7 +19,9 @@ const Experience: React.FC = () => {
                     date="September 2025 - Current"
                     technologies="Java, Python, Ansible, Opensearch, Grafana"
                     description={[
-                        "Improved Grafana dashboards using Python scripting, OpenSearch, and Ansible to aid API monitoring."
+                        "Continuously supported and improved the resiliency of data pipelines by resolving ongoing service and related infrastructure issues.",
+                        "Updated Java ingestion service logic to align OpenSearch index mappings and query behavior with analytics tools and dashboarding requirements",
+                        "Resolved a critical production issue impacting roughly 500M Kafka events by fixing unsafe multithreading in a Python script interacting with OpenSearch, restoring reliable event ingestion."
                     ]}
                     logo={gr}
                 />
