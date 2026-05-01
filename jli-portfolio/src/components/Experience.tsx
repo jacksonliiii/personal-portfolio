@@ -14,13 +14,23 @@ const Experience: React.FC = () => {
             <h2>Work Experience</h2>
             <ul className="experience-list">
                 <ExperienceItem
-                    title="Software Developer Intern"
+                    title="Software Engineering"
                     company="Global Relay"
-                    date="September 2025 - Current"
+                    date="September 2025 - Present"
                     technologies="Java, Python, Ansible, Opensearch, Grafana"
+                    subRoles={[
+                        {
+                            title: "Junior Software Developer",
+                            date: "March 2026 - Present"
+                        },
+                        {
+                            title: "Software Developer Intern",
+                            date: "September 2025 - March 2026"
+                        }
+                    ]}
                     description={[
-                        "Continuously supported and improved the resiliency of data pipelines by resolving ongoing service and related infrastructure issues.",
-                        "Updated Java ingestion service logic to align OpenSearch index mappings and query behavior with analytics tools and dashboarding requirements",
+                        "Transitioned from Software Developer Intern to Junior Software Developer and continued owning ingestion and pipeline reliability improvements.",
+                        "Updated Java ingestion service logic to align OpenSearch index mappings and query behavior with analytics tools and dashboarding requirements.",
                         "Resolved a critical production issue impacting roughly 500M Kafka events by fixing unsafe multithreading in a Python script interacting with OpenSearch, restoring reliable event ingestion."
                     ]}
                     logo={gr}

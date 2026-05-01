@@ -6,6 +6,7 @@ interface ExperienceItemProps {
     date: string;
     technologies: string;
     description: string[];
+    subRoles?: { title: string; date: string }[];
     link?: string; // Optional link for the title
     logo: string; // Logo URL or path
 }
@@ -16,6 +17,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                                                            date,
                                                            technologies,
                                                            description,
+                                                           subRoles,
                                                            logo
                                                        }) => {
     return (
@@ -26,6 +28,16 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                         <span className="experience-title-name">{title}</span>
                         <span className="experience-date">{date}</span>
                     </div>
+                    {subRoles && subRoles.length > 0 && (
+                        <div className="experience-subroles">
+                            {subRoles.map((role) => (
+                                <div className="experience-subrole" key={`${role.title}-${role.date}`}>
+                                    <span className="experience-subrole-title">{role.title}</span>
+                                    <span className="experience-subrole-date">{role.date}</span>
+                                </div>
+                            ))}
+                        </div>
+                    )}
                     <div className={"logo-company"}>
                         <img src={logo} alt={`${company} logo`} className="experience-logo"/>
                         <span className="experience-company">{company}</span>

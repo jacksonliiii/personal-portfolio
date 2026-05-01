@@ -12,6 +12,7 @@ interface Project {
     description: string;
     thumbnail: string;
     date: string;
+    tags: string[];
 }
 
 const projects: Project[] = [{
@@ -19,25 +20,29 @@ const projects: Project[] = [{
     link: "https://teamlightbox.itch.io/raycast",
     description: "A vibrant puzzle game about reflecting and bending light made using C++ and OpenGL.",
     thumbnail: raycast,
-    date: "2024"
+    date: "2024",
+    tags: ["C++", "OpenGL", "Graphics"]
 }, {
     title: "Pirate Rush",
     link: "https://pirate-rush.onrender.com/",
     description: "A fast-paced pirate adventure! Build your crew and click your way to the top!",
     thumbnail: pirateRushTN,
-    date: "2024"
+    date: "2024",
+    tags: ["TypeScript", "Web App", "Full Stack"]
 }, {
     title: "L3",
     link: "https://github.com/byuen88/L3",
     description: "Cloud-based, serverless Leaderboard app for League of Legends stats.",
     thumbnail: L3TN,
-    date: "2024"
+    date: "2024",
+    tags: ["Serverless", "Cloud", "AWS"]
 }, {
     title: "Constellation Tango",
     link: "https://store.steampowered.com/app/1721360/Constellation_Tango/",
     description: "Space-themed tactical game released on Steam!",
     thumbnail: ct,
-    date: "2022"
+    date: "2022",
+    tags: ["Unity", "Steam", "Team Project"]
 },];
 
 const Projects: React.FC = () => {
@@ -48,7 +53,9 @@ const Projects: React.FC = () => {
                         <a className={"project-link"} href={project.link} target="_blank"
                            rel="noopener noreferrer">
                             <img src={project.thumbnail} alt={`${project.title} thumbnail`}
-                                 className="project-thumbnail"/>
+                                 className="project-thumbnail"
+                                 loading="lazy"
+                                 decoding="async"/>
                         </a>
                         <div className="project-details">
                             <div className="project-info">
@@ -56,6 +63,11 @@ const Projects: React.FC = () => {
 
                             </div>
                             <p>{project.description}</p>
+                            <div className="project-tags">
+                                {project.tags.map((tag) => (
+                                    <span key={tag} className="project-tag">{tag}</span>
+                                ))}
+                            </div>
                             <p className="project-date">{project.date}</p>
                         </div>
                     </div>))}

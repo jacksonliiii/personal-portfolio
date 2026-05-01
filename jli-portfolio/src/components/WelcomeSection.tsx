@@ -8,10 +8,16 @@ const WelcomeSection: React.FC = () => {
         <section id="welcome" className="welcome-section">
             <div className="welcome-content">
                 <div className="welcome-text-content">
-                    <h1 className="welcome-title">Welcome to My Portfolio!</h1>
+                    <p className="welcome-eyebrow">Software Engineer • Digital Artist</p>
+                    <h1 className="welcome-title">Hi, I&apos;m Jackson Li</h1>
                     <p className="welcome-description">
-                        Discover my journey in software engineering, game dev, and digital art.
+                        I build reliable software and visual art with personality.
+                        Explore my work and see what I can bring to your team.
                     </p>
+                    <div className="welcome-cta-row">
+                        <a href="#projects" className="welcome-cta welcome-cta-primary">View Projects</a>
+                        <a href="#experience" className="welcome-cta welcome-cta-secondary">Work Experience</a>
+                    </div>
                 </div>
                 <div className="art-showcase">
                     <img src={art} alt="Showcased Art" className="showcased-art"/>

@@ -14,13 +14,13 @@ const Art: React.FC = () => {
             {/* Art Gallery */}
             <div className="art-gallery">
                 <div className="art-piece">
-                    <img src={art1} alt="Art 1" />
+                    <img src={art1} alt="Featured digital artwork 1" loading="lazy" decoding="async" />
                 </div>
                 <div className="art-piece">
-                    <img src={art2} alt="Art 2" />
+                    <img src={art2} alt="Featured digital artwork 2" loading="lazy" decoding="async" />
                 </div>
                 <div className="art-piece">
-                    <img src={art3} alt="Art 3" />
+                    <img src={art3} alt="Featured digital artwork 3" loading="lazy" decoding="async" />
                 </div>
             </div>
 
