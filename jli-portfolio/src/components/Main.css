@@ -21,11 +21,13 @@
 
 .all-container {
     background-color: #111;
+    min-height: 100vh;
 }
 
 .main-container {
-    max-width: 55%;
+    width: min(1100px, calc(100% - 2.5rem));
     margin: 0 auto;
+    padding-bottom: 2.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -38,7 +40,7 @@
     }
 
     .main-container {
-        max-width: 80%;
+        width: min(980px, calc(100% - 2rem));
     }
 }
 
@@ -52,8 +54,8 @@
     }
 
     .main-container {
-        max-width: 90%;
-        padding: 1rem;
+        width: min(900px, calc(100% - 1.25rem));
+        padding-bottom: 1.25rem;
     }
 }
 
@@ -67,7 +69,7 @@
     }
 
     .main-container {
-        max-width: 95%;
-        padding: 0.5rem;
+        width: min(900px, calc(100% - 0.75rem));
+        padding-bottom: 1rem;
     }
 }
