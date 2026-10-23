@@ -17,7 +17,7 @@ const Experience: React.FC = () => {
                     title="Software Engineering"
                     company="Global Relay"
                     date="September 2025 - Present"
-                    technologies="Java, Python, Ansible, Opensearch, Grafana"
+                    technologies="Java, Spring Boot, Python, Opensearch, Apache Flink"
                     subRoles={[
                         {
                             title: "Junior Software Developer",
@@ -30,8 +30,6 @@ const Experience: React.FC = () => {
                     ]}
                     description={[
                         "Transitioned from Software Developer Intern to Junior Software Developer and continued owning ingestion and pipeline reliability improvements.",
-                        "Updated Java ingestion service logic to align OpenSearch index mappings and query behavior with analytics tools and dashboarding requirements.",
-                        "Resolved a critical production issue impacting roughly 500M Kafka events by fixing unsafe multithreading in a Python script interacting with OpenSearch, restoring reliable event ingestion."
                     ]}
                     logo={gr}
                 />
@@ -41,11 +39,7 @@ const Experience: React.FC = () => {
                     company="MacroHealth"
                     date="September 2023 - August 2024"
                     technologies="Scala, MongoDB, JavaScript, Apache Nifi"
-                    description={[
-                        "Accelerated claim data generation time by 35% by optimizing processor code to batch transactions.",
-                        "Fixed and developed various components for internal software platform, enhancing usability.",
-                        "Built data model to standardize claim info and created REST APIs for data processing.",
-                        "Wrote data validation scripts using JavaScript and MongoDB, ensuring accuracy.",
+                    description={["Cut claim data generation time by 35% in Scala, built a standardized claim data model with REST APIs."
                     ]}
                     logo={mh}
                 />
@@ -56,8 +50,7 @@ const Experience: React.FC = () => {
                     date="September 2022 - April 2023"
                     technologies="Python, Jenkins, Groovy, Docker"
                     description={[
-                        "Accelerated Jenkins CI/CD pipeline run time by 14% by optimizing scripts in Groovy.",
-                        "Automated device model testing process using PowerShell scripting, eliminating manual steps.",
+                        "Improved Jenkins CI/CD pipeline run time by 14% with Groovy optimizations and automated device model testing with PowerShell."
                     ]}
                     logo={semtech}
                 />
@@ -68,7 +61,7 @@ const Experience: React.FC = () => {
                     date="September 2024 - December 2024"
                     technologies="TypeScript, JavaScript, CSS"
                     description={[
-                        "Provided technical guidance to students in debugging TypeScript projects.",
+                        "Provided technical guidance to students for their TypeScript projects.",
                         "Led bi-weekly scrum meetings, removing blockers, and promoting Agile best practices.",
                     ]}
                     logo={ubc}
